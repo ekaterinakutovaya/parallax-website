@@ -18,7 +18,11 @@ const Header = () => {
     }
   };
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    if (!openNavigation) return;
+
+    setOpenNavigation(false);
+  };
 
   return (
     <div
